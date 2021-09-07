@@ -6,7 +6,7 @@
 /*   By: sadjigui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/05 16:43:14 by sadjigui          #+#    #+#             */
-/*   Updated: 2021/09/05 16:46:51 by sadjigui         ###   ########.fr       */
+/*   Updated: 2021/09/07 15:46:03 by sadjigui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ void	ft_d_i(va_list convert, t_struct *v)
 
 void	ft_c(va_list convert, t_struct *v)
 {
-	char	*c;
+	int	c;
 
-	c = va_arg(convert, char *);
+	c = va_arg(convert, int);
 	write(1, &c, 1);
 	v->g_return++;
 }
